@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let array = [1, 2, 3, 4, 5, 6];
+      let len = array.length;
+      console.log("for in output");
+      for (let item in array) {
+        console.log(item);
+      }
+      console.log("for of output");
+      for (let item of array) {
+        console.log(item);
+      }
+
+      for (i = 0; i <= len; i++) {
+        console.log("the elements are :" + i);
+      }
+    </script>
+  </body>
+</html>

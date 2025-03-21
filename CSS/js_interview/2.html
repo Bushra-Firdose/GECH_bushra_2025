@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      create an object student and then increase the marks by 10%..insise the
+      object
+    </h1>
+    <script>
+      let obj1 = {
+        name: "bushar",
+        age: 23,
+        marks: 50,
+        inc_fun: function () {
+          this.marks += 10;
+        },
+      };
+      console.log(obj1);
+      obj1.inc_fun();
+      console.log(obj1.marks);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>change the content of the paragraph tag using js</h1>
+    <button id="btn" onclick="handleclick()">change</button>
+    <p id="p">helllo</p>
+
+    <script>
+      function handleclick() {
+        let res = (document.getElementById("p").innerText = "hiii ");
+      }
+      console.log(res);
+    </script>
+  </body>
+</html>
