@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>How many types we can declare the variables</h1>
+    <h3>There are 4 types</h3>
+    <p>1.automatically</p>
+    <p>2.using var</p>
+    <p>3.using let</p>
+    <p>4.using const</p>
+
+    <script>
+      //automatically
+      var1 = "hello";
+      console.log("value of var1:" + var1);
+      console.log("type of var1 " + typeof var1);
+
+      //var
+      var var2 = "hello";
+      console.log("value of var2:" + var2);
+      console.log("type of var2 " + typeof var2);
+
+      //let
+      let var3 = "hello";
+      console.log("value of var3:" + var3);
+      console.log("type of var3 " + typeof var3);
+
+      //const
+      const var4 = 122n;
+      console.log("the value is:" + var4);
+      console.log("the type of var4 : " + typeof var4);
+
+      //re declaring of variables
+      var var11 = 20;
+      console.log("1st:", var11);
+      var var11 = "hello";
+      console.log("2st:", var11);
+
+      //re declaring using let
+      let var12 = 20;
+      console.log(" let 1st:", var12);
+      var12 = "hello";
+      console.log("let 2st:", var12);
+
+      //const
+      const pi = 3.14;
+      console.log(" const 1st:", pi);
+      pi = 23.14;
+      console.log("const 2st:", pi);
+    </script>
+  </body>
+</html>

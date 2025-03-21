@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>array in java script</title>
+  </head>
+  <body>
+    <h1>Array Destructuring</h1>
+    <script>
+      let array1 = ["item1", "item2", "item3", "item4"];
+      console.log(array1);
+      let var1 = array1[0];
+      let var2 = array1[1];
+      let var3 = array1[2];
+      let var4 = array1[3];
+      console.log(var1, var2, var3, var4);
+
+      let array2 = [
+        "item1",
+        "item2",
+        "item3",
+        "item4",
+        "item5",
+        "item6",
+        "item7",
+        "item8",
+      ];
+      const [var5, var6, ...rest] = array2; //...rest is used when we have too many elemenets
+      console.log("array:", var5, var6);
+      console.log("rest:", rest);
+
+      let array3 = [1, 2, 3, 4, 5];
+      const [var8, , var9] = array3;
+      console.log("last:", var8, var9);
+
+      console.log("Nested destructuring");
+      //nested destructuring
+      const user = [
+        { fname: "bushra", age: "22", address: "Banglore" },
+        { fname: "bushra1", age: "22", address: "Banglore" },
+        { fname: "bushra2", age: "22", address: "Banglore" },
+      ];
+      const [{ fname }, user2, user3] = user;
+      console.log(
+        "only fname of user1 displayed using nested destruct:",
+        fname
+      );
+      console.log(user2);
+      console.log(user3);
+    </script>
+  </body>
+</html>

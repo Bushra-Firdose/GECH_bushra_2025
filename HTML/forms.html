@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Creating forms</h1>
+    <form action="" method="post">
+        <label for="name">Name:     </label><input type="text" name="name" id="name" required value="Bushra" readonly><br><br>
+        <label for="email">Email:  </label><input name="email" id="email" required value="bushra@gmail.com" readonly><br><br>
+        <!-- <label for="msg">Message:</label><input name="msg" id="msg" type="text"  required value="Hiii" readonly><br><br> -->
+        <label for="msg">Mesaage: <textarea name="message" id="" readonly  required></textarea><br><br>
+        <!-- <button type="submit" value="submit">Submit</button><br><br> -->
+        <label for="gender">GENDER</label><br><label for="male">male</label><input type="radio" name="gender" id="male"><br>
+            <label for="female">female</label><input type="radio" name="gender" id="female"><br><br>
+            <input type="file" multiple name="img_file"><br><br>
+            <label for="skills">Skills</label><br>
+            <input type="checkbox" name="skills" id="">html<br>
+            <input type="checkbox" name="skills" id="">CSS<br>
+            <input type="checkbox" name="skills" id="">java<br>
+            <input type="checkbox" name="skills" id="">python<br><br>
+            <select name="country" id="country">
+                <option value="">Select the country</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="Austrila">Austrila</option>
+            </select><br><br>
+            <button type="submit" value="submit" style="color: rgb(37, 37, 119); shape-margin: 20%; background-color: rgb(129, 219, 219);">Submit</button>
+   </form>
+    
+</body>
+</html>

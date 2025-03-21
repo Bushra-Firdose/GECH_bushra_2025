@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>array in js</title>
+  </head>
+  <body>
+    <script>
+      let array = [1, 2, 3, 4, 5, 6, 7];
+      console.log(array);
+      //push and pop
+      array.push(23);
+      console.log("after pushing", array);
+      const res = array.pop();
+      console.log("the poped elemrnt is", res);
+      console.log("the array after poping is", array);
+
+      //shift and unshift
+      let array1 = [1, 2, 3, 4, 5, 6, 7, 8];
+      console.log(array1);
+      array1.unshift(21);
+      console.log("unshift will push the ele at the begnning", array1);
+      array1.shift();
+      console.log("shift will pop the ele from the begnning", array1);
+    </script>
+    <script>
+      let array3 = [12, "hii", true, null, { "name:": "bushra" }];
+      console.log(array3);
+      console.log(typeof array3[2]);
+
+      for (let i of array3) {
+        console.log(typeof i, ":", i);
+      }
+
+      for (let item of array3) {
+        console.log(item);
+      }
+    </script>
+  </body>
+</html>

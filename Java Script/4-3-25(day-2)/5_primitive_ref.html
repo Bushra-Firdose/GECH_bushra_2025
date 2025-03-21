@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let x = 10;
+      let y = x;
+      console.log("the value of x before is:", x); //10
+      console.log("the value of y before is:", y); //10
+      x = 100;
+      console.log("the value of x after is:", x); //100
+      console.log("the value of y after is:", y); //10
+
+      let array1 = [12, 13, 14, 15];
+      let array2 = array1;
+      console.log("the value of array1 before is:", array1);
+      console.log("the value of array2 before is:", array2);
+      array2.push(90);
+      console.log("the value of array1 after is:", array1);
+      console.log("the value of array2 after is:", array2);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        :root{
+            --aqua:antiquewhite;
+            --green:rgb(216, 216, 135);;
+
+        }
+      .ptag {
+        background-color: var(--aqua)
+      }
+      .divtag {
+        background-color:var(--green)
+      }
+      .ptag1{
+        background-color:var(--aqua)
+
+      }
+      .divtag1{
+        background-color:var(--green) ;
+      }
+      .container{
+        margin:20px auto;
+        border: 2px solid red ;
+        width: 70vw;
+        height: 50vh;
+        padding: 20px;
+
+
+      }
+      .child{
+        width:20% ;
+        height: 20%;
+        border: 2px solid blue;
+        padding: 20px;
+        /* margin: 20px; */
+        /* background-color: antiquewhite; */
+      }
+      .fir{
+            background-color: antiquewhite;
+            z-index: 20;
+            position: relative;
+            top: 100px;
+            left: 100px;
+          
+      }
+      .sec{
+        background-color: aqua;
+        z-index: 50;
+        
+        
+      }
+      
+    </style>
+  </head>
+  <body>
+    <p class="ptag">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa provident
+      nobis odio natus, corporis error obcaecati? Iusto, nostrum est architecto,
+      voluptatum molestiae quis ut dolore itaque alias, sapiente sint nobis.
+    </p>
+    <div class="divtag">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos libero omnis
+      consectetur quo enim odit rem doloribus iure? Aliquam nesciunt laudantium
+      placeat sit iure voluptatum ab aperiam quisquam voluptates eos.
+    </div>
+    <p class="ptag1">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa provident
+      nobis odio natus, corporis error obcaecati? Iusto, nostrum est architecto,
+      voluptatum molestiae quis ut dolore itaque alias, sapiente sint nobis.
+    </p>
+    <div class="divtag1">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos libero omnis
+      consectetur quo enim odit rem doloribus iure? Aliquam nesciunt laudantium
+      placeat sit iure voluptatum ab aperiam quisquam voluptates eos.
+    </div>
+    <div class="container">
+        <div class="child fir">1</div>
+        <div class="child sec">2</div>
+    </div>
+  </body>
+</html>

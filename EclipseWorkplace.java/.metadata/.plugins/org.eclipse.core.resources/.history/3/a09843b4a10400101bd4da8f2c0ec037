@@ -1,0 +1,31 @@
+package introduction_to_java.firstprogram;
+
+public class ControlStatements {
+	public static void main(String[] args) {
+		/*
+		 * if ,if else , else if and switch statement
+		 * if (condition){
+		 * }
+		 * else{
+		 * }
+		 * if(condition){
+		 * }
+		 * else if (condition){
+		 * }
+		 * else if (condition){
+		 * }
+		 * else{
+		 * }*/
+		int a=10;
+		int b=20;
+		
+		if (a<b) {
+		System.out.println("b is large");
+		}
+		else() {
+			System.out.println("a is large");
+		}
+		
+	}
+
+}

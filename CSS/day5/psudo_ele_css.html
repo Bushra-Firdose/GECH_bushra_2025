@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ::selection{
+            background-color: yellow;
+            color: aqua;
+           
+        }
+        .atag{
+            text-decoration: none;
+            margin-left: 20px;
+        }
+        .atag::after{
+            content: "h";
+        }
+        .atag::before{
+            content: "b";
+        }
+        .fir::first-letter{
+            font-size: 100px;
+
+        }
+        .sec::second-letter{
+color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <a href="" class="atag">Home</a>
+            <a href="" class="atag">About</a>
+            <a href="" class="atag">Content</a>
+            <a href="" class="atag">message</a>
+        </div>
+        <p class="fir">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis animi veniam excepturi rem vitae dolores at nulla dolor amet voluptatum nisi ducimus incidunt neque tempora, blanditiis nihil sequi! Possimus, ab!</p>
+        <p class="sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tempore placeat cum at? Harum animi provident alias fugit dolorum. Soluta officiis vel perspiciatis, facere aperiam cum veritatis repellendus voluptate repudiandae.</p>
+    </div>
+</body>
+</html>

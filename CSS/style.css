@@ -1,0 +1,31 @@
+h1{
+    font-weight: 200;
+    border: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 1px solid;
+    margin-top: 20px;
+    background-attachment: scroll;
+    text-align: center;
+    color: rgb(31, 16, 16);
+    background-color: aliceblue;
+}
+body{
+    background-color: rgb(200, 235, 223);
+    background-image: url(../image.jpg) ;
+    background-size: cover;
+    color: aliceblue;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    background-clip: border-box;
+    opacity: ;
+    
+
+}
+
+p{
+    margin: 20%;
+    border: 3cap solid rgb(63, 42, 42);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>this</title>
+  </head>
+  <body>
+    <h1>This keyword</h1>
+    <p>
+      this keyword will print the window object ,inside thst it will show the
+      document obj ie print, alter alert etc
+    </p>
+    <p>if we use function it will print current obj</p>
+    <p>
+      if we arrow function for the same thing it will display the window obj as
+      the arrow function will always print one level higher
+    </p>
+    <script>
+      function hello() {
+        console.log(this);
+      }
+      hello(); //window obj will be printed
+      console.log("use of function");
+      const obj1 = {
+        fname: "bushra",
+        lname: "firdose",
+        age: 22,
+        place: "hassan",
+
+        about: function () {
+          console.log(this.fname + " " + this.lname);
+        },
+      };
+      obj1.about(); //here as we hav used the function about the current object that is obj1 will be printed
+      console.log("arrow function");
+      const obj2 = {
+        fname: "habiba",
+        lname: "arbiya",
+        age: 23,
+        about: () => {
+          console.log(this);
+        },
+      };
+      obj2.about(); //here we will get window obj as an output
+    </script>
+  </body>
+</html>

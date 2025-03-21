@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>math library</title>
+  </head>
+  <body>
+    <h1>Math</h1>
+    <script>
+      //math library
+      console.log(Math);
+      console.log(Math.PI);
+
+      let var1 = 49;
+      console.log("sqr fo 49 :", Math.sqrt(var1));
+      console.log("2^3", Math.pow(2, 3)); //2*2*2
+      console.log("floor", Math.floor(3.55)); //3
+      console.log("floor:", Math.floor(3.99));
+      console.log("floor", Math.floor(3.999999999999999999999999999999999999));
+      console.log("floor:", Math.floor(-2.9)); //-3
+
+      console.log("ciel:", Math.ceil(3.1));
+      console.log("ciel:", Math.ceil(3.5));
+
+      console.log("round:", Math.round(2.3)); //2
+      console.log("round:", Math.round(3.4)); //2
+      console.log("round:", Math.round(4.9)); //2
+      console.log("round:", Math.round(-10.4)); //2
+      console.log("round:", Math.round(4.6)); //2
+
+      console.log("random :", Math.random());
+      console.log("random:", Math.ceil(Math.random() * 10)); //both will give same op
+      console.log("random:", Math.floor(Math.random() * 11)) + 1;
+    </script>
+  </body>
+</html>

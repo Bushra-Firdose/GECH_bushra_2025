@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>loping statements</title>
+  </head>
+  <body>
+    <h1>Looping statements</h1>
+    <p>for loop - for(intializaton; condition;increment or decrement)</p>
+    <p>while loop <pre>
+        //initilazation ex: i=10;
+        while(conditon){
+            //code
+            //increment/decrement
+        }
+
+    </pre></p>
+    <p>do while <pre>
+        //initilazation
+        do{
+            //code
+            //increment/decrement
+        }
+        while(condition);
+    </pre></p>
+    <p>for in</p>
+    <p>for of</p>
+
+    <script>
+        console.log("For loop")
+      let array1 = ["item1", "item2", "item3", "item4"];
+      let len = array1.length;
+      console.log(len);
+      for (let i = 0; i < 4; i++) {
+        console.log(array1[2]);
+      }
+
+      console.log("while loop");
+      let j=0;
+      while(j<array1.length){
+        console.log(array1[j]);
+        j++;
+      }
+      console.log("in while loop taking input from user")
+
+    //   let n=Number(prompt("enter a number"));
+    //   let m=1;
+    //   while(m<=n){
+    //     console.log(m)
+    //     m++;
+    //   }
+
+      console.log("do while loop")
+
+      let a=["a","b","c"];
+      let b=0;
+      do{
+        console.log(a[b]);
+        b++;//b=b+1
+
+      }while(b<a.length)
+
+      console.log("do while taking input from user")
+      do{
+        const n = Number(prompt("enter a no"))
+        if(n === 20){
+            break;
+        }
+      } while(true)
+    </script>
+  </body>
+</html>

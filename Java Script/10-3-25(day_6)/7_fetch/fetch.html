@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>fetch example</h1>
+    <div id="divtag"></div>
+    <script>
+      const url = "https://jsonplaceholder.typicode.com/posts";
+      const getUsers = async (url) => {
+        const res = await fetch(url);
+        const jsonRes = await res.json();
+        console.log(jsonRes);
+        jsonRes.forEach((curele) => {
+          console.log(curele);
+          document.getElementById(
+            "divtag"
+          ).innerHTML += `<p>${curele.id} ${curele.title}</p>`;
+        });
+      };
+      getUsers(url);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object</title>
+  </head>
+  <body>
+    <script>
+      const car_obj = {
+        carname: "tesla",
+        type: "EV",
+        wheels: "foue",
+        "four seat": true,
+        speed: function () {
+          console.log("tesla is moving by 60km/hr");
+        },
+      };
+
+      console.log(car_obj);
+      console.log(car_obj.carname);
+      console.log(car_obj.wheels);
+      car_obj.speed();
+      console.log(car_obj["four seat"]);
+
+      //adding item to an object
+      car_obj.colour = "red";
+      console.log("car object:", car_obj);
+
+      const new_obj = { ...car_obj };
+      console.log(new_obj);
+
+      //deleting object from object
+      delete car_obj.colour;
+      console.log("after car object:", car_obj);
+    </script>
+  </body>
+</html>

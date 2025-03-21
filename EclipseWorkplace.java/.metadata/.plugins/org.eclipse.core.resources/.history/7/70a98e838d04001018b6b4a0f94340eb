@@ -1,0 +1,20 @@
+package introduction_to_java.firstprogram;
+
+public class NonPrimitive {
+	public static void main(String[] args) {
+		
+		/*
+		 * 1.array
+		 * 
+		 * 
+		 * 2.String
+//		 * String name=""*/
+//		int[] array1= {1,2,3,4,5,6};
+//		System.out.println(array1[4]);
+//		
+//		String name="Hello World";
+//		System.out.println(name);
+		
+		
+	}
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image.jpg"image/x-icon">
+    <title>simple webpage</title>
+    <style>
+        *{
+            padding: 10px;
+        }
+        .index:hover{
+            color: rgb(52, 85, 147);
+            background-color: antiquewhite;
+        }
+        .index:visited{
+            color: aqua;
+            background-color:rgb(28, 8, 8);
+        }
+        .index:active{
+            color: blueviolet;
+            background-color: blanchedalmond;
+        }
+        .index:link{
+            color: red;
+        }
+        table,td,th{
+            border-color: brown;
+            border-collapse: collapse;
+            border-width: 0.5cap;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Block Level Tags</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore dolorum maiores autem, nobis corrupti a
+        repellendus enim maxime, nostrum sapiente, temporibus asperiores esse? Blanditiis beatae delectus mollitia
+        aliquid. Illum, ut!</p>
+        <div>Lorem ipsum dolor </div>
+        <h2>Inline Level Tags</h2>
+
+         <!-- html attributes -->
+          <p>lorem ipsum dolor</p>
+          <p>lorem ipsum dolor</p>
+          <p>lorem ipsum dolor</p>
+          <iframe src="https://www.bing.com/news/search?q=Amazon&eventans=1&eventland=0&eventrel=1&qpvt=amazon&FORM=EWRE" style="width: 700px; height: 300px;"></iframe><br><br>
+          
+          <!-- target _blank _self -->
+          <a href="https://www.w3schools.com/" target="_self">w3school-self</a><br><br>
+          <a href="https://www.w3schools.com/" target="_blank">w3school-blank</a><br><br>
+          <a href="./index.html" target="_blank" class="index" title="it is index.html">index</a><br><br>
+          <!-- inserting of image -->
+          <img src="image.jpg" alt="image not found" style="height: 20%; width: 40%;"><br>
+
+          <!-- table tags  -->
+           <!-- horizontal table  -->
+           <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>USN</th>
+                <th>Branch</th>
+            </tr>
+            <tr>
+                <td>Bushra Firdose</td>
+                <td>061</td>
+                <td>CS</td>
+            </tr>
+           </table><br><br>
+           
+           <!-- vertical table -->
+           <table border="1">
+            <tr>
+                <th>Name</th>
+                <td>Bushra Firdose</td>
+                <td>Habiba Farzana</td>
+            </tr>
+            <tr>
+                <th>USN</th>
+                <td>061</td>
+                <td>014</td>
+            </tr>
+            <tr>
+                <th>Branch</th>
+                <td>CS</td>
+                <td>CS</td>
+            </tr>
+            
+           </table><br>
+           
+           <!-- tbody>tr>td*7  -->
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursda
+                        </th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                        <th>sunday</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td colspan="3">2</td>
+                       
+                        <!-- <td>4</td> -->
+                        <td>5</td>
+                        <td>6</td>
+                        <td  rowspan="2">7</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                        <!-- <td>7</td> -->
+                    </tr>
+        
+            </table>
+        </body>
+
+</html>

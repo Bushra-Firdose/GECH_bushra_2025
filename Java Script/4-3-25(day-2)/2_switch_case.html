@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>switch case</title>
+  </head>
+  <body>
+    <h1>how to input from the user</h1>
+    <p>prompt</p>
+    <script>
+      let input_var = Number(prompt("enter a number"));
+      console.log(input_var);
+      console.log(typeof input_var);
+      switch (input_var) {
+        case 1: {
+          console.log("Monday");
+          break;
+        }
+        case 2: {
+          console.log("Tuesday");
+          break;
+        }
+        case 3: {
+          console.log("Wednesday");
+          break;
+        }
+        case 4: {
+          console.log("Thursday");
+          break;
+        }
+        case 5: {
+          console.log("Friday");
+          break;
+        }
+        case 6: {
+          console.log("Saturday");
+          break;
+        }
+        case 7: {
+          console.log("Sunday");
+          break;
+        }
+        default: {
+          console.log("enter avalid input between 1 to 7 only");
+        }
+      }
+    </script>
+  </body>
+</html>

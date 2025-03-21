@@ -1,0 +1,51 @@
+{% extends "base.html" %} {% block content %}
+<!-- <h1>Home</h1> -->
+<div class="row">
+  <div class="col-md-4 col-12">
+    <h2 class="alert alert-info text-center" >add student</h2>
+    <form action="" method="post">
+      {% csrf_token %}
+        {{student_form.as_p}}
+      <input type="submit" class="btn btn-seconadry" value="add student" />
+    </form>
+  </div>
+  <div class="col-md-7 offset-md-1 col-12">
+    <h2 class="alert alert-primary text-center">Student List</h2>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>email</th>
+          <th>password</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for std in students %}
+        <tr>
+            <td>{{std.id}}</td>
+            <td>{{std.name}}</td>
+            <td>{{std.email}}</td>
+            <td>{{std.password}}</td>
+            <td>
+              <a href="{% url 'edit' std.id %}" class="btn btn-info">Edit</a>
+              <a href="{% url 'delete' std.id %}" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+        {% empty %}
+       <td colspan="6" ><h4 class="alert alert-light text-danger text-center">No student found</h4></td>
+          
+        {% endfor %}
+        <!-- <tr>
+          <td>1</td>
+          <td>Habiba</td>
+          <td>habiba33@gmail.com</td>
+          <td>habiab</td>
+        </tr> -->
+      </tbody>
+    </table>
+  </div>
+</div>
+
+  {% endblock content %}
+</div>

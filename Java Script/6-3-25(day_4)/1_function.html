@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>arrow function</title>
+    <style>
+      table,
+      td,
+      th {
+        border: 2px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Arrow function</h1>
+    <table>
+      <th>
+        <tr>
+          <th>fname</th>
+          <th>age</th>
+          <th>address</th>
+        </tr>
+      </th>
+      <tbody id="table_body"></tbody>
+    </table>
+    <script>
+      //for single parameter prntheses is not required
+      const iseven = (num) => num % 2 == 0;
+      const res = iseven(5);
+      console.log(res);
+    </script>
+    <script>
+      const user = [
+        { fname: "bushra", age: "22", address: "Banglore" },
+        { fname: "bushra1", age: "22", address: "Banglore" },
+        { fname: "bushra2", age: "22", address: "Banglore" },
+        { fname: "bushra3", age: "22", address: "Banglore" },
+        { fname: "bushra4", age: "22", address: "Banglore" },
+        { fname: "bushra5", age: "22", address: "Banglore" },
+        { fname: "bushra6", age: "22", address: "Banglore" },
+        { fname: "bushra7", age: "22", address: "Banglore" },
+      ];
+
+      let conte = "";
+      for (let item of user) {
+        conte += `<tr>
+        <td>${item.fname}</td>
+        <td>${item.age}</td>
+        <td>${item.address}</td>
+        </tr>`;
+      }
+      console.log(conte);
+      document.getElementById("table_body").innerHTML = conte;
+    </script>
+  </body>
+</html>

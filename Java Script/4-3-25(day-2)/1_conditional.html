@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>conditonal statement</title>
+  </head>
+  <body>
+    <h1>conditional statement</h1>
+    <p>if</p>
+    <p>if else</p>
+    <p>if else ladder</p>
+    <p>switch</p>
+
+    <script>
+      console.log("if else statement:");
+      let age = 25;
+      if (age > 0 && age < 9) {
+        console.log("greater than 0 less than 9");
+      } else if (age >= 10 && age < 20) {
+        console.log("age is greater than or equal 10 and less than 20");
+      } else if (age >= 20 && age < 30) {
+        console.log("greater than or equal to 20 and les than 30");
+      } else {
+        console.log("non of the condition satisfies");
+      }
+
+      if (age >= 0 && age <= 12) {
+        console.log("child");
+      } else if (age >= 13 && age <= 19) {
+        console.log("teenager");
+      } else if (age >= 20 && age <= 59) {
+        console.log("adult");
+      } else if (age >= 60 && age <= 100) {
+        console.log("old");
+      } else {
+        console.log("invalid age");
+      }
+
+      console.log("switch statement:");
+
+      let num = 2;
+      switch (num) {
+        case 1: {
+          console.log("the given no is 1");
+          break;
+        }
+        case 2: {
+          console.log("the given no is 2");
+          break;
+        }
+        case 3: {
+          console.log("the given no is 3");
+          break;
+        }
+        default: {
+          console.log("the no is >3 or lessthan 1");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero-section{
+    background-color: antiquewhite;
+    height: 80vh;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+}
+
+.hero-section .hero-button{
+
+}

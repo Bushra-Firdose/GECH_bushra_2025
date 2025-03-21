@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 70vh;
+        width: 40vw;
+        grid-template-columns: [firstcol]auto [seccol]auto [thicol]auto;
+        grid-template-rows: [firstrow]auto [secrow]auto [thirow]auto;
+        display: grid;
+        border: 2px solid rebeccapurple;
+        column-gap: 20px;
+        row-gap: 20px;
+        padding: 10px;
+
+      }
+      .child{
+        /* height: 10vh;
+        width: 20vw; */
+        border: 3px solid black;
+        /* display: grid;
+        grid-template-columns: auto auto auto; */
+        text-align: center;
+        padding: 30px;
+        
+
+
+      }
+      .fifth{
+        grid-column: seccol/span 2;
+      }
+      .fourth{
+        grid-row: secrow/span 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <div class="child first">1</div>
+    <div class="child second">2</div>
+    <div class="child third">3</div>
+    <div class="child fourth">4</div>
+    <div class="child fifth">5</div>
+    <div class="child six">6</div>
+    <div class="child seven">7</div>
+    <div class="child eight">8</div>
+    <div class="child nine">9</div>
+    <div class="child ten">10</div>
+</div>
+  </body>
+</html>

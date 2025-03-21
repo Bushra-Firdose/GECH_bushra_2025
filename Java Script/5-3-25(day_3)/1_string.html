@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>string</title>
+  </head>
+  <body>
+    <h1>string methods</h1>
+    <p>1.length</p>
+    <p>2.slice</p>
+    <p>3substring</p>
+    <p>4.substr</p>
+    <p>5.replace</p>
+    <p>6.touppercase()</p>
+    <p>7.tolowercase()</p>
+    <p>8.trim</p>
+    <p>9.indexOf</p>
+    <p>10.startsWith</p>
+    <p>11.endsWith</p>
+    <p>12.includdes</p>
+    <p>13.concat</p>
+  </body>
+  <script>
+    //1.string length
+    let str1 = "hello world";
+    const len = str1.length;
+    // console.log(`the length of the string ${str1} is : ${len}`);
+    // console.log("the length of string " + str1 + "is :" + len);
+    // console.log("the len of string ", str1, "is :", len);
+
+    //2.string slice
+    let str2 = "javascript";
+    let str3 = str2.slice(2, 7); //2 is incuded and 7 excluded
+    console.log(`the siced string is :${str3}`);
+    console.log(str2[5]);
+    console.log(str2.slice(-1));
+    console.log(str2.slice(-8, -3)); //-8 is excluded and -3 is included
+
+    //3.substring
+    let str4 = "abcdefghij";
+    let str5 = str4.substring(2, 7); //2 is included and 7 is excluded
+    console.log(`the string is : ${str5}`);
+    console.log(
+      `the string is : -ve index is not applacable for substring ${str5.substring(
+        -13,
+        -8
+      )}`
+    ); //-ve index will not work in substring
+
+    //4.substr
+    let str6 = "hello wordl";
+    let str7 = str6.substr(2, 7); //(start,len of string)
+    console.log(`the substring is: ${str7}`);
+    console.log(`the string is : ${str7.substr(-9, 7)}`);
+
+    //5.replace
+    let str8 = "java script";
+    let str9 = str8.replace("java", "python");
+    console.log(`the replaced string is:${str9}`);
+
+    //6.uppercase
+    let str10 = "habiba";
+    let str11 = str10.toUpperCase();
+    console.log(`the uppercas is: ${str11}`);
+
+    //7.lower case
+    let str12 = "HABIBA";
+    let str13 = str12.toLowerCase();
+    console.log(`the lower case is: ${str13}`);
+
+    //8.trim
+    let str14 = "          hello        ";
+    console.log(`the string is: ${str14}`);
+    let str15 = str14.trim();
+    console.log(`the trimed string is:${str15}`);
+
+    //9.indexof
+    let str16 = "Hello javascript";
+    let index = str16.indexOf("ello");
+    console.log(`the index is :${index}`);
+
+    //10.startswith
+    let str17 = "hyyiiii java";
+    let str18 = str17.startsWith("hyyii");
+    console.log(`the string starts with:  ${str18}`);
+
+    //11.ends with
+    let str19 = "hyyiiii java";
+    let str20 = str19.endsWith("av");
+    console.log(`the string ends with:  ${str20}`);
+
+    //12.includdes()
+    let str21 = "hiii arbiya";
+    let str22 = str21.includes("arbiya");
+    console.log(`the result is : ${str22}`);
+
+    //13.concat()
+    let str23 = "hello ";
+    let str24 = str23.concat("world");
+    console.log(`the result is:${str24}`);
+  </script>
+</html>

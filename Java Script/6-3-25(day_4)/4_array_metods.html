@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>arrat metod</h1>
+
+    <ol>
+      <li>foreach</li>
+      <br />
+      <li>map</li>
+      <br />
+      <li>filter</li>
+      <br />
+      <li>reduce br sort</li>
+      <br />
+      <li>splice(satrt,delelte,insert)</li>
+      <br />
+      <li>each</li>
+      <br />
+
+      <li>some</li>
+    </ol>
+
+    <script>
+      const array1 = [1, 2, 3, 4, 5, 6];
+      //foreach
+      array1.forEach((curEle, index, array1) => {
+        console.log(
+          "the ele is:",
+          curEle,
+          "the index is:",
+          index,
+          "the array is:",
+          array1
+        );
+      });
+
+      const user1 = [
+        { fname: "bushra", age: "22", address: "Banglore" },
+        { fname: "bushra1", age: "22", address: "Banglore" },
+        { fname: "bushra2", age: "22", address: "Banglore" },
+      ];
+
+      user1.forEach((currentele) => {
+        console.log(currentele);
+      });
+
+      //2.map
+
+      const array2 = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+      const array3 = array2.map((currele, index, array) => {
+        return currele * currele;
+      });
+      console.log("array2", array2);
+      console.log("array3", array3);
+
+      const user2 = [
+        { fname: "bushra", age: "22", address: "Banglore" },
+        { fname: "bushra1", age: "22", address: "Banglore" },
+        { fname: "bushra2", age: "22", address: "Banglore" },
+      ];
+      const user3 = user2.map((ele) => {
+        return ele.fname;
+      });
+      console.log("user2:", user2);
+      console.log("fname:", user3);
+
+      //3.filter
+      const array4 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      const array5 = array4.filter((curele) => {
+        return curele % 2 == 0;
+      });
+      console.log("array5:", array5);
+
+      //reduce
+      const array6 = [1, 2, 3, 4, 5, 6, 7, 8];
+      const res = array6.reduce((previous, current, index, array) => {
+        
+        return previous + current; 
+      }, 10); 
+      console.log("result : ", res); 
+
+
+      
+    </script>
+  </body>
+</html>

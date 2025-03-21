@@ -1,0 +1,8 @@
+package introduction_to_java.firstprogram;
+
+public class UserInputValues {
+	public static void main(String[] args) {
+	}
+	}
+
+}

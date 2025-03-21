@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Operators in JS</h1>
+    <dl>
+      <dt>1. Arithmeric</dt>
+      <dd>+, _, *, /</dd>
+    </dl>
+    <dl>
+      <dt>2. Assignment</dt>
+      <dd>=, +=, -=, /=, %=, *=, **=</dd>
+    </dl>
+    <dl>
+      <dt>3. Comparision</dt>
+      <dd>=, ===, !=, !===, <, >, <=, >=,</dd>
+    </dl>
+    <dl>
+      <dt>4. Bitwise</dt>
+      <dd>&, |, ~, ^</dd>
+    </dl>
+    <dl>
+      <dt>5. Logical</dt>
+      <dd>&&, ||, !</dd>
+    </dl>
+    <dl>
+      <dt>6. Ternary</dt>
+      <dd>?, :</dd>
+    </dl>
+    <script>
+      console.log("bitwise operator");
+      let var3 = 3; //011
+      let var4 = 2; //010
+      console.log("&:", var3 & var4);
+      console.log("|:", var3 | var4);
+      console.log("~:", ~var4);
+      console.log("^:", var3 ^ var4);
+
+      console.log("logical operator");
+      let var5 = 2;
+      let var6 = 2;
+      let var7 = 3;
+      let var8 = 6;
+
+      console.log("&&:", var3 && var4);
+      console.log(var5 > var6 && var7 < var6);
+
+      console.log("Ternary operator");
+      console.log("? : -", 6 > 13 ? "yes it is" : "No");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>optional changing</title>
+  </head>
+  <body>
+    <h1>optional changing</h1>
+    <h2>syntax: ?.</h2>
+    <script>
+      const obj1 = {
+        name: "bushra",
+        age: 22,
+        address: {
+          countyr: "india",
+          state: "karnataka",
+          city: "hassan",
+        },
+      };
+      console.log(obj1);
+      console.log(obj1?.address1?.countyr); //as address1 is not present in the obj1 so we dont know the obj1 name exactly so we use ? s that insted of error we get undefined
+      console.log(obj1?.address?.countyr); //here address is defined so we get the output as india
+    </script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <button type="button" onclick="handleClick()">Click Me</button>
+    <script>
+      //display function
+      function handleClick() {
+        //1.innerHTml
+        //2.innerText
+        //3.console.log
+        //4.document.write
+
+        //1.innerHtml.....writing html code inside p tag
+        // document.getElementById("demo").innerHTML =
+        //   "<span>Hello innerHTML</span>";
+
+        //2.innerText
+        // document.getElementById("demo").innerText = "Hello bushra";
+
+        //3.console.log..it will show in the temina when we inspect
+        // console.log("user has clicked the button");
+
+        //4.document.write..it will erase all the html code and new doc is created and we write in it
+        document.write("user clicked the button to write");
+
+        //5.window.alert
+        window.alert("user click alert button");
+
+        // window.print()....it will print the window
+      }
+    </script>
+  </body>
+</html>

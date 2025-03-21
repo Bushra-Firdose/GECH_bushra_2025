@@ -1,0 +1,14 @@
+package introduction_to_java.firstprogram;
+
+public class Switch2 {
+	private static final Object String = null;
+
+	public static void main(String[] args) {
+		Object obj1="hello";
+		switch(obj1){
+		case String s->System.out.println("string type");
+		default -> System.out.println("invaid");
+		}
+		
+	}
+}

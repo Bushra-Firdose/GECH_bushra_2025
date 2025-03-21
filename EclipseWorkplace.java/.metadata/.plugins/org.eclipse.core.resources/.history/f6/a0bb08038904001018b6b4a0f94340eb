@@ -1,0 +1,14 @@
+package introduction_to_java.firstprogram;
+
+import java.util.Scanner;
+
+public class UserInputValues {
+	public static void main(String[] args) {
+		int stdage=0;
+		System.out.println("enter student age");
+		Scanner sc=new Scanner(System.in);
+		stdage=sc.nextInt();
+		System.out.println("the age of student is :" +stdage);
+	
+	}
+}
