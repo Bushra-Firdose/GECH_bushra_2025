@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Distruction in js....distruct the object of an array</h1>
+    <script>
+      const users = [
+        { id: 1, name: "Alice", age: 30 },
+        { id: 2, name: "Bob", age: 25 },
+        { id: 3, name: "Charlie", age: 35 },
+      ];
+
+      // Destructure the array of objects
+      const [firstUser, secondUser, thirdUser] = users;
+
+      // Access properties of the first user
+      const { id: userId, name: userName, age: userAge } = firstUser;
+
+      // Print the extracted values
+      console.log(userId); // Output: 1
+      console.log(userName); // Output: Alice
+      console.log(userAge); // Output: 30
+
+      // Destructure the array and extract specific properties
+      const [
+        { name: firstUserName },
+        { name: secondUserName },
+        { name: thirdUserName },
+      ] = users;
+
+      console.log(firstUserName); // Output: Alice
+      console.log(secondUserName); // Output: Bob
+      console.log(thirdUserName); // Output: Charlie
+    </script>
+  </body>
+</html>
