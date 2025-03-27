@@ -1,0 +1,15 @@
+package functionalInterface;
+
+@FunctionalInterface
+interface Interface2{
+	public void display2() {
+		
+	}
+}
+
+public class FuctionalInterfaceInJava1 {
+	public static void main(String[] args) {
+		Interface2
+	}
+
+}

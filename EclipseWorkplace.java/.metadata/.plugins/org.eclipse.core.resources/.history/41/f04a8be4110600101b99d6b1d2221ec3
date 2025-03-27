@@ -1,0 +1,11 @@
+package InterfaceInJava;
+
+public class InterfaceInJava {
+	public static void main(String[] args) {
+		/*
+		 * Interface :
+		 * It is the blue print of the class
+		 * The method in the interface by default abstracts(does not contain */
+	}
+
+}

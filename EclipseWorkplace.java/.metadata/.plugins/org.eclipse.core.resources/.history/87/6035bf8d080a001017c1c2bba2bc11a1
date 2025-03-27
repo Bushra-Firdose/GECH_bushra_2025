@@ -1,0 +1,28 @@
+package generics;
+
+
+ class Student {
+	int student_id;
+	
+	public Student(int student_id) {
+		super();
+	this.student_id=student_id;
+	
+	}
+	
+	public int returnValue(){
+		return student_id;
+		
+	}
+
+}
+
+
+public class GenericClasssDemo {
+	public static void main(String[] args) {
+		Student std = new Student(12);
+		int 
+		
+	}
+
+}

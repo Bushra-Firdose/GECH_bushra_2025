@@ -1,0 +1,19 @@
+package exceptionInJava;
+
+public class ExceptionInJava3 {
+public static void main(String[] args) {
+	/*
+	 * finally block
+	 * this will execute even if the exception occurs 
+	 * where we can have to write the closing code like
+	 * db connection ,file close
+	 * */
+	try {
+		System.out.println(10/0);
+		
+	} finally {
+		// TODO: handle finally clause
+	}
+	
+}
+}

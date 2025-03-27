@@ -1,0 +1,13 @@
+package collectionInJava;
+
+public class ArrayListDemo {
+public static void main(String[] args) {
+	/*
+	 * ArrayList:
+	 * -->Array list is the improved version of array(dynamic array)
+	 * -->Array List underline data structure is Dynamic array
+	 * -->Array list will allow duplicate
+	 * 
+	 * */
+}
+}

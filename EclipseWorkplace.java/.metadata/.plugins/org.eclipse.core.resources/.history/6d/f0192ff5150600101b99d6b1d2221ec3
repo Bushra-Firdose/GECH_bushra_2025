@@ -1,0 +1,11 @@
+package InterfaceInJava;
+
+interface A{
+	public void methodA();
+}
+
+public class InterfaceInJava1 {
+	/*
+	 * */
+
+}

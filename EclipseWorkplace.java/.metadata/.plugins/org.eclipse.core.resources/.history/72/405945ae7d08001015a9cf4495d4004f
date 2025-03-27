@@ -1,0 +1,15 @@
+package final_this_super;
+
+class Person{
+	
+}
+
+public class ThisInJAva {
+public static void main(String[] args) {
+	/*
+	 * This keyword :
+	 * 1.used to refer instance variables current class
+	 * 2.used to refer current class constructor 
+	 * 3.*/
+}
+}

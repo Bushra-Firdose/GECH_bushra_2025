@@ -1,0 +1,8 @@
+package final_this_super;
+
+public class SuperInJava {
+	public static void main(String[] args) {
+		
+	}
+
+}

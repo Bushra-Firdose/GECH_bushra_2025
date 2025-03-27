@@ -1,0 +1,11 @@
+package customStudent;
+
+import com.CustomStudent.Student;
+
+public class Student {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student std1=new Student("munazza",27,21);
+		System.out.println(std1);
+	}
+}

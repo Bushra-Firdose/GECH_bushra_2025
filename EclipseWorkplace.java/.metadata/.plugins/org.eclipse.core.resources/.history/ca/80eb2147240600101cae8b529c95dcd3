@@ -1,0 +1,9 @@
+package inheritance;
+
+interface AA{
+	
+}
+
+public class Multilevel2 {
+
+}

@@ -1,0 +1,16 @@
+package typecastingInJava;
+
+public class TypecastingInJava {
+	public static void main(String[] args) {
+		/*
+		 * Type casting :
+		 * conversion of one data to another
+		 * 
+		 * 1.implicide type casting:
+		 * byte-> short-> int -> long -> float -> double
+		 * 
+		 * 2.explicide type casting:
+		 * */
+	}
+
+}

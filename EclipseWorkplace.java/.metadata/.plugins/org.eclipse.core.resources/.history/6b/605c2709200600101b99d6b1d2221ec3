@@ -1,0 +1,22 @@
+package InterfaceInJava;
+
+class grandpParentClass{
+	public void grandParentmethod(){
+		System.out.println("This is Grand Parent Class");
+	}
+}
+
+class ParentClass extends grandParentClass{
+	public void Parentmethod(){
+		System.out.println("This is Grand Parent Class");
+	}
+}
+
+public class Multilevel {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

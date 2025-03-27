@@ -1,0 +1,7 @@
+package PredfinedFunctionInterface;
+
+public class SupplierInJava {
+public static void main(String[] args) {
+	
+}
+}

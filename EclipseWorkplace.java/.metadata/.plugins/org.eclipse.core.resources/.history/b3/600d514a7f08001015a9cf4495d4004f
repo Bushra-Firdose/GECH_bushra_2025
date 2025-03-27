@@ -1,0 +1,12 @@
+package final_this_super;
+
+public class SuperInJava {
+	public static void main(String[] args) {
+		/*
+		 * super :
+		 * 1.it used to call class instance variable
+		 * 2.it used to call super class constructor
+		 * 3.*/
+	}
+
+}

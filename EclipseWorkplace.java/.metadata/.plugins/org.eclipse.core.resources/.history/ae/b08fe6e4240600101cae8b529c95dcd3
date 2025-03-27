@@ -1,0 +1,13 @@
+package inheritance;
+interface newinterface{
+	public void intermethod();
+}
+
+class Parentclass{
+	public void Parentclassmethod() {
+		
+	}
+}
+public class Hybrid {
+
+}

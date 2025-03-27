@@ -1,0 +1,10 @@
+/**
+ * 
+ */
+/**
+ * @author BUSHRA FIRDOSE
+ *
+ */
+module FeaturesInJava {
+	requires java.base;
+}

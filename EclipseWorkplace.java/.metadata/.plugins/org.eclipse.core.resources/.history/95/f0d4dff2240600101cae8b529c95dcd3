@@ -1,0 +1,16 @@
+package inheritance;
+interface newinterface{
+	public void intermethod();
+}
+
+class Parentclass{
+	public void Parentclassmethod() {
+		System.out.println("this is parent class");
+		
+	}
+}
+
+class childclass extends Parentclass implements newinterface
+public class Hybrid {
+
+}

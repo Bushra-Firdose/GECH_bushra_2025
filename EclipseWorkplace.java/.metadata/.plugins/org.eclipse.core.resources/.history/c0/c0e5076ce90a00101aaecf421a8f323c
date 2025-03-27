@@ -1,0 +1,10 @@
+package PredfinedFunctionInterface;
+
+public class PredicateInJava {
+public static void main(String[] args) {
+	/*
+	 * Predicate :
+	 * It will hold a condition
+	 * */
+}
+}

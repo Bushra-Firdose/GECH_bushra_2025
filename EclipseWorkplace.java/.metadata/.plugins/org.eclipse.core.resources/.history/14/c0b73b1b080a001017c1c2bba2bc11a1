@@ -1,0 +1,14 @@
+package generics;
+
+public class Student {
+	int student_id;
+	
+	public Student(int student_id) {
+		super();
+	this.student_id=student_id;
+	
+	}
+public static void main(String[] args) {
+	
+}
+}

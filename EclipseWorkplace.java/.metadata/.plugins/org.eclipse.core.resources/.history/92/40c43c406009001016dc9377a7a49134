@@ -1,0 +1,10 @@
+package collectionInJava;
+
+public class CollectionInJava {
+	public static void main(String[] args) {
+		/*
+		 * why we need collection ?
+		 * -->to over come the */
+	}
+
+}

@@ -1,0 +1,14 @@
+package collectionInJava;
+
+public class CollectionInJava1 {
+	public static void main(String[] args) {
+		/*
+		 * 
+		 * collection-->it is the root interface of collection framework
+		 * collections-->it will provide some of the utility method to work with collection 
+		 * 
+		 * collection:
+		 * when you represent a group of individual object as a single entity t*/
+	}
+
+}

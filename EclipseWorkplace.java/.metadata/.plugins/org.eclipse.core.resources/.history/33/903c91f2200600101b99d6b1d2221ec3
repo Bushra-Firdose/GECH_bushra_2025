@@ -1,0 +1,38 @@
+package InterfaceInJava;
+
+class grandParentClass{
+	public void grandParentmethod(){
+		System.out.println("This is Grand Parent Class");
+	}
+}
+
+class ParentClass extends grandParentClass{
+	public void Parentmethod(){
+		System.out.println("This is  Parent Class");
+	}
+}
+
+class ChildClass extends ParentClass{
+	public void Parentmethod(){
+		System.out.println("This is  Parent Class");
+	}
+}
+
+public class Multilevel {
+
+	public static void main(String[] args) {
+		grandParentClass grand = new grandParentClass();
+		grand.grandParentmethod();
+		
+		ParentClass parent =new ParentClass();
+		parent.Parentmethod();
+		
+		ClildClass parent =new ChildClass();
+		parent.method();
+		
+		
+		
+
+	}
+
+}

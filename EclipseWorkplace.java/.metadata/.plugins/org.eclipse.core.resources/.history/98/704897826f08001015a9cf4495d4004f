@@ -1,0 +1,13 @@
+package encapsulation;
+
+class Person{
+	public String name;
+	public int 
+}
+
+public class ToStringInJava {
+
+	public static void main(String[] args) {
+		
+	}
+}

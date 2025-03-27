@@ -1,0 +1,23 @@
+package InterfaceInJava;
+
+interface interface1{
+	public void method();
+	public  default void defaultmethod() {
+		System.out.println("this is default method in interface");
+		
+	}
+	public static void sataticmethod() {
+		System.out.println("this is static method in interface");
+		
+	}
+}
+
+class Child3 implements Interface1{
+	
+}
+public void method() {
+	
+}
+public class InterfaceInJava2 {
+
+}

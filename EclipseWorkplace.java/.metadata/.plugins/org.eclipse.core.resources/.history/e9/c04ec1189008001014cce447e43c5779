@@ -1,0 +1,10 @@
+package concrete_pojo;
+
+class Student{
+	
+	
+	
+}
+public class ConcreteClass {
+
+}

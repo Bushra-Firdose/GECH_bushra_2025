@@ -1,0 +1,12 @@
+package concrete_pojo;
+
+public class ConcreteClass {
+	public static void main(String[] args) {
+		/*
+		 * POJO class
+		 *plane ald java object(pojo)
+		 *rules
+		 *1.this  */
+	}
+
+}

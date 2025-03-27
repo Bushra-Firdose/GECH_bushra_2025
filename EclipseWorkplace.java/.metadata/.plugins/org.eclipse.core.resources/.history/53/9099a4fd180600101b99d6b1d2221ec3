@@ -1,0 +1,12 @@
+package InterfaceInJava;
+
+interface interface1{
+	public void method();
+	public  default void defaultmethod() {
+		System.out.println("this is default method in interface");
+		
+	}
+}
+public class InterfaceInJava2 {
+
+}

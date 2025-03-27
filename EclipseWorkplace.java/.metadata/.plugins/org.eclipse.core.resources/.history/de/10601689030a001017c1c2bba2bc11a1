@@ -1,0 +1,12 @@
+package generics;
+
+public class GenericsInJava {
+public static void main(String[] args) {
+	/*
+	 * Generics:
+	 * to provide the type safety and to avoid the type casting in 
+	 * collection then we should go for generic */
+	
+	
+}
+}

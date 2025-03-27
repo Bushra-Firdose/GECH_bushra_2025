@@ -1,0 +1,10 @@
+package map;
+
+public class MapInJava {
+public static void main(String[] args) {
+	/*
+	 * Map:
+	 * When you represent a group of individual object as a single entity 
+	 * in the form of key value pair then we should for map interface*/
+}
+}

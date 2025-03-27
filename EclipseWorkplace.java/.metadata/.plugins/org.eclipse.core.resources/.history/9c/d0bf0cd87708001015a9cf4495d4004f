@@ -1,0 +1,19 @@
+package abstraction;
+
+//Interface
+interface Animal{
+	public viod 
+}
+
+public class Abstraction {
+public static void main(String[] args) {
+	/*
+	 * Abstraction
+	 * it is a process of binding the implementation and 
+	 * showing only the essention resource
+	 * 
+	 * 2 ways :
+	 * 1.Interface (100%)
+	 * abstract class(0-100%)*/
+}
+}

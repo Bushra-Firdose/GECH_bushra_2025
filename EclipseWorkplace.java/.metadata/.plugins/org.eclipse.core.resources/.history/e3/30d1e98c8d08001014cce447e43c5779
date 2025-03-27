@@ -1,0 +1,5 @@
+package concrete_pojo;
+
+public class ConcreteClass {
+
+}

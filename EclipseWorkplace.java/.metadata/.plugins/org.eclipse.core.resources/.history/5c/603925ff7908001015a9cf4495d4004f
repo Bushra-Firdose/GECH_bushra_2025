@@ -1,0 +1,12 @@
+package final_this_super;
+
+public class Animal{
+	public void eat() {
+		System.out.println();
+		
+	}
+}
+
+public class FinalInJava {
+
+}

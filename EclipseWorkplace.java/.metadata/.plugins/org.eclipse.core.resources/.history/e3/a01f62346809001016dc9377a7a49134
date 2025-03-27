@@ -1,0 +1,11 @@
+package collectionInJava;
+
+public class ListInJava {
+	public static void main(String[] args) {
+		/*
+		 * List
+		 * :
+		*/
+	}
+
+}

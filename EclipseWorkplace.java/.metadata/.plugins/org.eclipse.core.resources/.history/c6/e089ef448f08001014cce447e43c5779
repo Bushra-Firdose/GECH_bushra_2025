@@ -1,0 +1,22 @@
+package concrete_pojo;
+
+class Student{
+	
+}
+
+public class ConcreteClass {
+	public static void main(String[] args) {
+		/*
+		 * POJO class
+		 *plane ald java object(pojo)
+		 *rules
+		 *1.this class should not extend or implement any class or interface
+		 *2.Every field (states/properties) should be private
+		 *3. All args constructor
+		 *4.No- args constructor
+		 *5.toString()
+		 *6.Getters and Setters public method*/
+		
+	}
+
+}

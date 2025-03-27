@@ -1,0 +1,24 @@
+package com.CustomStudent;
+
+import java.util.List;
+
+public class StartStudent {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student std1=new Student("munazza",27,21);
+		Student std2=new Student("munazza",27,21);
+		Student std3=new Student("munazza",27,21);
+		Student std4=new Student("munazza",27,21);
+		
+		List<Student> students=new ArrayList<>();
+		students.add(std1);
+		students.add(std2);
+		students.add(std3);
+		students.add(std4);
+		
+		
+		
+	}
+
+}

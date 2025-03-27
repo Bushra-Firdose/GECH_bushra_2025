@@ -1,0 +1,41 @@
+package wrapperclasses;
+
+public class Wrapperclasses {
+public static void main(String[] args) {
+	/*
+	 * java is a pure oop or not?
+	 * ----> No (primitive data type)
+	 * 
+	 * ----------------------------------------------------------------
+	 * 
+	 * primitive data types:
+	 * byte , short , int , long , float , double , character ,boolean 
+	 * 
+	 * String name= new String("mohan") ;
+	 * 
+	 * -----------------------------------------------------------------
+	 * collection:
+	 * -->to store group of individual object as a single entity 
+	 * -->it works only for objects but not on primitive data types
+	 * -->to overcome this we use calsses called wrapper calsses
+	 * 
+	 * -----------------------------------------------------------------
+	 * wrapper classes:
+	 * byte -->Byte (class name for wrapper classes)
+	 * short -->Short 
+	 * int -->Integer
+	 * long -->Long
+	 * float -->Float 
+	 * double -->double
+	 * char -->Character
+	 * boolean -->Boolean
+	 * */
+	
+	//1.Auto boxing --->from primitive to wrapper
+	int a=100;
+	Integer i=a;
+	System.out.println("int :"+a);
+	System.out.println("Intiger :" +i);
+	
+}
+}
