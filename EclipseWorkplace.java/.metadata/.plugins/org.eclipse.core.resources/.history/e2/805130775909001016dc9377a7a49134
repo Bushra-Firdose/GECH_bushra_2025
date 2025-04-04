@@ -1,7 +1,0 @@
-package wrapperclasses;
-
-public class Wrapperclasses {
-public static void main(String[] args) {
-	
-}
-}

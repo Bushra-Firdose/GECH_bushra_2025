@@ -1,7 +1,0 @@
-package set;
-
-public class SetInterfaceDemo {
-public static void main(String[] args) {
-	
-}
-}

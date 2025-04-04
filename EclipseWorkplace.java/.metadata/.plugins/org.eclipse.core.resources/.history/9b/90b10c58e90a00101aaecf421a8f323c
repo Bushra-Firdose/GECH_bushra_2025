@@ -1,9 +1,0 @@
-package PredfinedFunctionInterface;
-
-public class PredicateInJava {
-public static void main(String[] args) {
-	/*
-	 * Predicate :
-	 * */
-}
-}

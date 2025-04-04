@@ -1,8 +1,0 @@
-package map;
-
-public class MapInJava {
-public static void main(String[] args) {
-	/*
-	 * */
-}
-}

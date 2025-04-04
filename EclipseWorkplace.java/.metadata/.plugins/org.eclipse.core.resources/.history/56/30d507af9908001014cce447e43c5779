@@ -1,7 +1,0 @@
-package exceptionInJava;
-
-public class ExceptionInJava2 {
-public static void main(String[] args) {
-	//try with 
-}
-}

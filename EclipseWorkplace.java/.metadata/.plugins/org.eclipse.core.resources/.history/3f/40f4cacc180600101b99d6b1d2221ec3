@@ -1,8 +1,0 @@
-package InterfaceInJava;
-
-interface interface1{
-	public void method();
-}
-public class InterfaceInJava2 {
-
-}

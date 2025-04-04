@@ -1,8 +1,0 @@
-package encapsulation;
-
-public class ToStringInJava {
-
-	public static void main(String[] args) {
-		
-	}
-}

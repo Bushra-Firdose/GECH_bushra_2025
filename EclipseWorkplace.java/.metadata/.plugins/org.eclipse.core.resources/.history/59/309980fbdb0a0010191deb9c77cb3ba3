@@ -1,7 +1,0 @@
-package comparator;
-
-public class ComparatorInJava {
-public static void main(String[] args) {
-	
-}
-}

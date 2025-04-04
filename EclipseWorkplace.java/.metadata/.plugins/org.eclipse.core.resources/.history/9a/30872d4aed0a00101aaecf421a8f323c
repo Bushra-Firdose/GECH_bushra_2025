@@ -1,7 +1,0 @@
-package PredfinedFunctionInterface;
-
-public class FunctionInJava {
-public static void main(String[] args) {
-	
-}
-}

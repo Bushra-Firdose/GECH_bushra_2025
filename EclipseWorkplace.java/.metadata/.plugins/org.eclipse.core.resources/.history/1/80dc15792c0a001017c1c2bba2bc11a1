@@ -1,8 +1,0 @@
-package set;
-
-public class TreesetInJava {
-	public static void main(String[] args) {
-		
-	}
-
-}
