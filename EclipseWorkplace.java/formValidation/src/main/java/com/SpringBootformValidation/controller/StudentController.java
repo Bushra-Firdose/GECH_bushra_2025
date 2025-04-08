@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -39,23 +40,34 @@ public class StudentController {
 
 	@GetMapping({ "/add-student" })
 	public String addStudent(Model model) {
-		model.addAttribute("StudentDto", new StudentDto());
+		model.addAttribute("studentDto", new StudentDto());
 		return "add-student";
 
 	}
 
 	@PostMapping("/add-student")
-	public String addStudent(@Valid @ModelAttribute StudentDto studentDto, BindingResult result, Model model,
-			RedirectAttributes attributes) {
-		if (result.hasErrors()) {
+	public String addstudent(@Valid @ModelAttribute StudentDto studentDto, BindingResult result, Model model, RedirectAttributes attributes) {
+		//email validation
+		Student student =studentRepository.findByEmail(studentDto.getEmail());
+		if(student != null) {
+			result.addError(new FieldError("StudentDto", "email", "email already exist"));
+		}
+		
+		//this for image
+		if(studentDto.getImage().isEmpty()) {
+			result.addError(new FieldError("StudentDto", "image", "image is required"));
+		}
+		
+		//to show error shows for name
+		if(result.hasErrors()) {
 			return "add-student";
 		}
-		System.out.println(studentDto.getName() + "2");
+		System.out.println(studentDto.getName()+ "2");
 		studentService.saveStudent(studentDto);
-		attributes.addFlashAttribute("success", "Student added successfully");
+		attributes.addFlashAttribute("success", "student add successfully");
 		return "redirect:/";
-
 	}
+
 
 	@GetMapping("/std-delete")
 	public String deleteStudent(@RequestParam(name = "id") Long id) {
@@ -75,10 +87,15 @@ public class StudentController {
 	@PostMapping("/edit-student")
 	public String updateStudent(@Valid @ModelAttribute StudentDto studentDto, BindingResult result, Model model,
 			@RequestParam(name = "id") Long id) {
+		// email validation
+		Student student1 = studentRepository.findByEmail(studentDto.getEmail());
+		if (student1 != null && student1.getId() != id) {
+			result.addError(new FieldError("StudentDTO", "email", "email is required"));
+		}
+
 		if (result.hasErrors()) {
 			Student student = studentRepository.findById(id).get();
 			model.addAttribute("student", student);
-			model.addAttribute("studentDto", studentDto);
 			return "edit-student";
 		}
 		studentService.updateStudent(studentDto, id);

@@ -25,7 +25,8 @@ public class Student {
 	@Column(name="std_age")
 	private int age;
 	
-	@Column(name="std_email")
+	@Column(name="std_email" ,unique = true)
+	
 	private String email;
 	
 	@Column(name="std_password")
@@ -34,6 +35,14 @@ public class Student {
 	@Column(name="imagepath")
 	private String imagepath;
 	
+	public String getImagepath() {
+		return imagepath;
+	}
+
+	public void setImagepath(String imagepath) {
+		this.imagepath = imagepath;
+	}
+
 	public Student(long id, String name, int age, String email, String password, String imagepath) {
 		super();
 		this.id = id;
