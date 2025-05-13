@@ -1,11 +1,13 @@
 package com.springSecurityDemo.springSecurityDemo.service;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
 
 import com.springSecurityDemo.springSecurityDemo.DTO.StudentDTO;
 import com.springSecurityDemo.springSecurityDemo.model.Student;
 import com.springSecurityDemo.springSecurityDemo.repository.StudentRepo;
 
+@Service
 public class StudentService {
 	
 	private StudentRepo studentRepo;
